@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SimpleNav</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="PickPhoto">Pick Photo</string>
+    <string name="ChangeName">Change Name</string>
+    <string name="ChangeNameImage">Change Name Image</string>
+    <string name="Name">Name</string>
+    <string name="MAPPA">MAPPA</string>
+
+
+    <string-array name="Dimension_array">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+    <string-array name="Font_array">
+        <item>anton_regular</item>
+        <item>bhutuka_regular</item>
+        <item>dancing_script</item>
+    </string-array>
+
+    <string-array name="Horizontal_array">
+        <item>left</item>
+        <item>center</item>
+        <item>right</item>
+    </string-array>
+
+    <string-array name="Vertical_array">
+        <item>top</item>
+        <item>center</item>
+        <item>bottom</item>
+    </string-array>
+
+</resources>

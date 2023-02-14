@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".Another"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--Pick color Button-->
+
+
+    <!--sample view to preview selected color by user-->
+    <!--by default this has been set to darker gery-->
+    <!--this can be overridden after user chose the
+         color from color picker-->
+    <!--which has been handled in the MainActivity.java-->
+
+    <!--set color button to overwrite the
+        color for GeeksforGeeks text-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView3"
+        android:layout_width="411dp"
+        android:layout_height="701dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="411dp"
+            android:layout_height="702dp"
+            android:layout_marginBottom="1dp"
+
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <EditText
+                android:id="@+id/textViewText"
+                android:layout_width="309dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="516dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinnerV"
+                android:layout_width="124dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="212dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerH"
+                android:layout_width="124dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="104dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerD"
+                android:layout_width="124dp"
+                android:layout_height="82dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="516dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerF"
+                android:layout_width="124dp"
+                android:layout_height="82dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="412dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/pick_color_button"
+                android:layout_width="136dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="200dp"
+                android:text="Pick Color Font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/pick_color_buttonBG"
+                android:layout_width="136dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="328dp"
+                android:text="Pick Color BG"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/preview_selected_colorBackground"
+                android:layout_width="107dp"
+                android:layout_height="97dp"
+                android:layout_marginBottom="292dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/set_color_buttonBG"
+                android:layout_width="136dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="268dp"
+                android:text="Set Color BG"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.941"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/set_color_button"
+                android:layout_width="136dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="140dp"
+                android:text="Set Color Font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.941"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/preview_selected_color"
+                android:layout_width="107dp"
+                android:layout_height="97dp"
+                android:layout_marginBottom="164dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/takeMyLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="105dp"
+                android:text="TAKE POSITION"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/createTwok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="92dp"
+                android:text="CREATE TWOK"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

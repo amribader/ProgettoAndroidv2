@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ui.Profile.Profilo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/Name" />
+
+        <Button
+            android:id="@+id/bt_pickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChangeName" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/OldImage"
+        android:layout_width="212dp"
+        android:layout_height="98dp" />
+
+    <Button
+        android:id="@+id/bt_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PickPhoto" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewProfilo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_main" />
+
+    <Button
+        android:id="@+id/btnChangePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeNameImage" />
+
+</LinearLayout>

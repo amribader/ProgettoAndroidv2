@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.simplenav.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="uid"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_home_pop"
+            app:destination="@id/home"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/another2"
+        android:name="com.example.simplenav.Another"
+        android:label="fragment_another"
+        tools:layout="@layout/fragment_another" />
+    <fragment
+        android:id="@+id/profilo"
+        android:name="com.example.simplenav.ui.Profile.Profilo"
+        android:label="fragment_profilo"
+        tools:layout="@layout/fragment_profilo" />
+    <fragment
+        android:id="@+id/utentiSeguiti"
+        android:name="com.example.simplenav.UtentiSeguiti"
+        android:label="fragment_utenti_seguiti"
+        tools:layout="@layout/fragment_utenti_seguiti" >
+        <action
+            android:id="@+id/action_utentiSeguiti_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.simplenav.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+    </fragment>
+</navigation>
